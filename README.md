@@ -1,6 +1,7 @@
 # Speaking Practice Aid
 
-<img width="1686" height="1960" alt="image" src="https://github.com/user-attachments/assets/fa07a224-9a6e-4099-b3d5-96b3bb5d1917" />
+<img width="824" height="720" alt="image" src="https://github.com/user-attachments/assets/fccc9cb3-8486-4a57-b615-ce62d8bdce6f" />
+
 
 A local-only web application for analyzing speaking practice recordings. It transcribes speech while preserving fillers (um, uh, like...) and detects pauses, generating a detailed report suitable for AI-assisted feedback.
 
