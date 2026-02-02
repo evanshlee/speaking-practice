@@ -3,6 +3,8 @@ uvicorn
 python-multipart
 faster-whisper
 torch
+torchaudio
+soundfile
 numpy
 ffmpeg-python
 silero-vad
