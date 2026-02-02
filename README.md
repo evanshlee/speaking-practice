@@ -15,10 +15,10 @@ A local-only web application for analyzing speaking practice recordings. It tran
 
 ## Prerequisites
 
-1. **Python 3.11** (or 3.12)
+1. **Python 3.9+** (3.9, 3.10, 3.11, or 3.12)
    ```bash
    # If using pyenv
-   pyenv install 3.11
+   pyenv install 3.11  # or 3.9, 3.10, 3.12
    pyenv shell 3.11
    ```
 
@@ -32,7 +32,42 @@ A local-only web application for analyzing speaking practice recordings. It tran
    brew install ffmpeg
    ```
 
-## Installation
+## Quick Start
+
+> ⚠️ **Prerequisites Required**: Make sure you've installed Python 3.9+, Node.js, and FFmpeg (see [Prerequisites](#prerequisites) above) before running these commands.
+
+### 🔧 First Time Setup & Run
+
+**Fresh clone?** Run this one command after installing prerequisites:
+```bash
+git clone https://github.com/evanshlee/speaking-practice.git
+cd practice-speaking
+./setup-and-run.sh
+```
+
+This will:
+- Create Python virtual environment
+- Install all backend dependencies
+- Install all frontend dependencies  
+- Start both backend and frontend servers
+
+**Then open [http://localhost:5173](http://localhost:5173)** in your browser! 🚀
+
+---
+
+### ⚡ Next Time (Already Set Up)
+
+**Dependencies already installed?** Just run:
+```bash
+./start.sh
+```
+This starts both servers instantly.
+
+---
+
+## Manual Installation & Setup (Optional)
+
+If you prefer to install dependencies manually instead of using `setup-and-run.sh`:
 
 ### 1. Clone and navigate to the project
 ```bash
@@ -42,8 +77,8 @@ cd practice-speaking
 
 ### 2. Set up the backend
 ```bash
-# Create virtual environment with Python 3.11
-python3.11 -m venv venv
+# Create virtual environment with Python 3.9+
+python3 -m venv venv
 
 # Activate and install dependencies
 source venv/bin/activate
@@ -59,31 +94,7 @@ cd ..
 
 ## Running the Application
 
-### 🔧 First Time Setup & Run
-
-**Fresh clone? No dependencies installed yet?** This one command does it all:
-```bash
-./setup-and-run.sh
-```
-This will:
-- Create Python virtual environment (if needed)
-- Install all backend dependencies
-- Install all frontend dependencies  
-- Start both backend and frontend servers
-
-**Then open [http://localhost:5173](http://localhost:5173)** in your browser! 🚀
-
----
-
-### ⚡ Quick Start (Already Set Up)
-
-**Dependencies already installed?** Just run:
-```bash
-./start.sh
-```
-This starts both servers instantly.
-
----
+After manual installation, you can use `./start.sh` for quick start, or run servers manually:
 
 ### 🛠️ Manual Start (Advanced)
 

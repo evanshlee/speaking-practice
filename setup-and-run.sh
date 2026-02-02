@@ -25,9 +25,9 @@ echo ""
 # Check if virtual environment exists
 if [ ! -d "$VENV_DIR" ]; then
     echo -e "${YELLOW}[1/4] Creating Python virtual environment...${NC}"
-    python3.11 -m venv "$VENV_DIR" || python3 -m venv "$VENV_DIR"
+    python3 -m venv "$VENV_DIR"
     if [ $? -ne 0 ]; then
-        echo -e "${RED}Failed to create virtual environment. Please ensure Python 3.11+ is installed.${NC}"
+        echo -e "${RED}Failed to create virtual environment. Please ensure Python 3.9+ is installed.${NC}"
         exit 1
     fi
     echo -e "${GREEN}      ✓ Virtual environment created${NC}"
